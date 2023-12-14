@@ -1,0 +1,41 @@
+<body class=>
+    <ion-content >
+        <ion-menu content-id="main-content">
+            <ion-header>
+                <ion-toolbar>
+                    <p>Bienvenido, {{ usuarioPasajero.nombre }}</p>
+                </ion-toolbar>
+            </ion-header>
+            <div class="ta">
+                <ion-list-header color="dark" (click)="perfil()">Mi Perfil</ion-list-header>
+                <ion-list-header color="dark" (click)="viajes()">Mis viajes</ion-list-header>
+                <ion-list-header color="dark" (click)="billetera()">Mi billetera</ion-list-header>
+                <ion-list-header color="dark" (click)="mensajes()">Mensajes</ion-list-header>
+            </div>
+            <div>
+                <ion-list-header color="dark" (click)="cerrarSesion()">Cerrar Sesión</ion-list-header>
+                <ion-list-header color="dark">Ayuda</ion-list-header>
+            </div>
+        </ion-menu>
+        <div class="ion-page" id="main-content">
+            <ion-header>
+                <ion-toolbar>
+                    <ion-buttons slot="start">
+                        <ion-menu-button></ion-menu-button>
+                    </ion-buttons>
+                    <ion-title>TeLlevoDuoc</ion-title>
+                </ion-toolbar>
+            </ion-header>
+            <ion-button expand="full" (click)="pedir()" class="boton">Pedir viaje</ion-button>
+            <div id="mapId"></div>
+            <!-- Enlaces a las hojas de estilo -->
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" />
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+            <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.79.0/dist/L.Control.Locate.min.css" />
+            <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+            <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder@1.13.0/dist/Control.Geocoder.css" />
+            <script src="https://unpkg.com/leaflet-control-geocoder@1.13.0/dist/Control.Geocoder.js"></script>
+        </div>
+    </ion-content>
+</body>

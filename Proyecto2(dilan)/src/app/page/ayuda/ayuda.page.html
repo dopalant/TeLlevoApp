@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Bienvenido a TeLlevoApp</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      ¿Cuál es tu problema?
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="stacked">Escribe tu problema aquí</ion-label>
+        <ion-textarea rows="5" [(ngModel)]="problema"></ion-textarea>
+      </ion-item>
+      <ion-button expand="full" (click)="enviarProblema()">Enviar</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

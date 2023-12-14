@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Crear Viaje</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="fondo"> 
+
+  <div class="orde">
+    <ion-item>
+      <ion-label position="floating">IdViaje</ion-label>
+      <ion-input type="text" [(ngModel)]="Viajes.idviaje" name="idviaje"></ion-input>
+    </ion-item>
+  </div>
+
+  <div class="orde">
+    <ion-item>
+      <ion-label position="floating">Inicio </ion-label>
+      <ion-input type="text" [(ngModel)]="Viajes.inicio" name="inicio"></ion-input>
+    </ion-item>
+  </div>
+
+  <div class="orde">
+    <ion-item>
+      <ion-label position="floating">Termino</ion-label>
+      <ion-input type="text" [(ngModel)]="Viajes.termino" name="termino"></ion-input>
+    </ion-item>
+  </div>
+
+  <div class="orde">
+    <ion-item>
+      <ion-label position="floating">Precio</ion-label>
+      <ion-input type="text" [(ngModel)]="Viajes.precio" name="precio"></ion-input>
+    </ion-item>
+  </div>
+
+  <div class="orde">
+    <ion-item>
+      <ion-label position="floating">Fecha</ion-label>
+      <ion-input type="text" [(ngModel)]="Viajes.fecha" name="fecha"></ion-input>
+    </ion-item>
+  </div>
+
+
+
+  <div class="orde">  
+    <ion-button expand="full"(click)="registra()">Crear Viajes</ion-button>
+  </div>
+</ion-content>
+

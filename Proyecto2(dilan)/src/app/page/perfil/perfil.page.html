@@ -1,0 +1,64 @@
+<body>
+  <ion-content class="fondo">
+      <ion-menu content-id="main-content" >
+          <ion-header >
+          <ion-toolbar>
+              <ion-title>Nombre usuario</ion-title>
+          </ion-toolbar>
+      </ion-header>
+      <div class="ta">  
+      <ion-list-header color="dark">
+          <ion-label  (click) = "inicio()">Inicio</ion-label>
+        </ion-list-header>
+        <ion-list-header color="dark">
+          <ion-label  (click) = "viajes()">Mis viajes</ion-label>
+        </ion-list-header>
+        <ion-list-header color="dark">
+          <ion-label  (click) = "wallet()">Mi billetera</ion-label>
+        </ion-list-header>
+        <ion-list-header color="dark">
+          <ion-label  (click) = "mensajes()">Mensajes</ion-label>
+        </ion-list-header></div>
+        <ion-list-header color="dark">
+          <ion-label>Ayuda</ion-label>
+        </ion-list-header>
+      </ion-menu>
+      <div class="ion-page" id="main-content">
+          <ion-header>
+          <ion-toolbar>
+              <ion-buttons slot="start">
+              <ion-menu-button></ion-menu-button>
+              </ion-buttons>
+              <ion-title>TeLlevoApp </ion-title>
+          </ion-toolbar>
+     </ion-header>
+   
+      </div>
+      <div class="logo"></div>
+      <ion-card>
+  <ion-card-header *ngIf ="usuarioPasajero">
+    <ion-card-title>Nombre Usuario: 
+      <p>{{ usuarioPasajero.nombre }}</p>
+    </ion-card-title>
+    <ion-card-subtitle>Correo: 
+      <p>{{ usuarioPasajero.correo }}</p>
+    </ion-card-subtitle>
+    <ion-card-subtitle>rut:
+      <p>{{ usuarioPasajero.rut }}</p>
+    </ion-card-subtitle>
+    <ion-card-subtitle>Telefono:
+      <p>{{ usuarioPasajero.telefono }}</p>
+    </ion-card-subtitle>
+  </ion-card-header>
+
+</ion-card>
+      
+  </ion-content>
+
+  
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
+  </body>
+  
+

@@ -1,0 +1,4 @@
+API
+djangorestframework
+mysqlclient
+django-cors-headers

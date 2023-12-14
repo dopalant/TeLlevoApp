@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="fondo"> 
+  <div class="orde">
+  <ion-item>
+    <ion-label position="floating">Nombre Completo</ion-label>
+    <ion-input type="text" [(ngModel)]="usuario.nombrecompleto" name="nombrecompleto"></ion-input>
+  </ion-item>
+</div>
+
+  <div class="orde">
+  <ion-item>
+    <ion-label position="floating">Rut</ion-label>
+    <ion-input type="text" [(ngModel)]="usuario.rut" name="rut"></ion-input>
+  </ion-item>
+</div>
+
+  <div class="orde">
+
+  <ion-item>
+    <ion-label position="floating">Telefono</ion-label>
+    <ion-input type="text" [(ngModel)]="usuario.telefono" name="telefono"></ion-input>
+  </ion-item>
+</div>
+
+<div class="orde">
+
+  <ion-item>
+    <ion-label position="floating">Correo</ion-label>
+    <ion-input type="text" [(ngModel)]="usuario.correo" name="correo"></ion-input>
+  </ion-item>
+</div>
+  <div class="orde">
+
+  <ion-item>
+    <ion-label position="floating">Contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="usuario.contrasenia" name="contrasenia"></ion-input>
+  </ion-item>
+</div>
+
+  <div class="orde">
+    
+    <ion-button expand="full"(click)="registrar()">Registrar</ion-button>
+
+</div>
+</ion-content>
+

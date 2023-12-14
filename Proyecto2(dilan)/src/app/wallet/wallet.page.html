@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <!-- Agregar un botón de flecha al lado del título -->
+      <ion-button (click)="redirigirAAccess()">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Billetera</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content class="fondo">
+  <ion-card>
+  <ion-card-header>
+    <ion-card-title>Mi Billetera</ion-card-title>
+    <ion-card-subtitle>Monto Total Actual</ion-card-subtitle>
+    <ion-card-title>$40.589 CLP</ion-card-title>
+  </ion-card-header>
+</ion-card>
+  <ion-card>
+    <ion-card-header>
+      Métodos de Pago
+    </ion-card-header>
+    <ion-card-content>
+      <!-- Lista de métodos de pago del usuario -->
+      <ion-list>
+        <!-- Agregar método de pago -->
+        <ion-item (click)="agregarMetodoDePago()">
+          <ion-label>Agregar Método de Pago</ion-label>
+          <ion-icon name="add-circle" slot="end"></ion-icon>
+        </ion-item>
+
+        <!-- Lista de métodos de pago existentes -->
+        <ion-item>
+          <ion-label>Tarjeta de Crédito</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>PayPal</ion-label>
+        </ion-item>
+        <!-- Agregar más métodos de pago aquí -->
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Realizar un Depósito
+    </ion-card-header>
+    <ion-card-content>
+      <!-- Formulario para realizar un depósito -->
+      <ion-item>
+        <ion-label position="stacked">Monto</ion-label>
+        <ion-input type="number" placeholder="Ingrese el monto" aria-label="Monto"></ion-input>
+      </ion-item>
+      <ion-button expand="full">Depositar</ion-button>
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>
